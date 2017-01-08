@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PaintApp</title>
+	<link href="index.css" rel="stylesheet">
+	<script src="index.js"></script>
+</head>
+<body>
+<canvas id="a" width="1075" height="600"></canvas>
+
+<div id="controls">
+
+	<p><label>Fill: <input id="fillbox" type="checkbox" checked="checked"/></label></p>
+
+	<div class="innerBorder">
+		<p><label>Fill Color<input id="fillcolor" type="color" value="#24B0D9"/></label>
+		<p><label>BackgroundColor<input id="bgcolor" type="color" value="#FFFFFF"/></label>
+	</div>
+	
+	<div class="innerBorder">
+		<p><label>line width<input id="line_width" type="range" step="1" min="1" max="50" value="8"/></label>
+		<p><input type="radio" name="lineCap" value="butt" checked="checked"/>Butt</p>
+		<p><input type="radio" name="lineCap" value="round"/>Round</p>
+		<p><input type="radio" name="lineCap" value="square"/>Square</p>
+	</div>
+
+	<div class="innerBorder">
+		<p><input type="radio" name="shape" value="line"/>Line</p>
+		<p><input type="radio" name="shape" value="circle"/>Circle</p>
+		<p><input type="radio" name="shape" value="poly"/>Polygon</p>
+		<p><input type="radio" name="shape" value="pencil"/>Pencil</p>
+		<p><input type="radio" name="shape" value="rubber"/>Rubber</p>
+		
+		
+	</div>
+	
+	
+	<p><label>Polygon Sides<input id="polygonside" type="range" step="1" min="3" max="10" onchange="findside()"/></label>
+	<output id="outputside"></output>
+
+	<p><label>Polygon Angle<input id="polygonangle" type="range" step="22.5" min="0" max="90" onchange="findangle()"/></label>
+	<output id="outputangle"></output>
+	</p>
+	<p><input id="clear" type="button" value="clear canvas"</p>
+	<div id="save">Save</div>
+	
+</div>
+ 
+</body>
+</html>

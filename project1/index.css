@@ -1,0 +1,47 @@
+*{
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+
+#a{
+	position: absolute;
+	top:50px;
+	left:210px;
+	border:1px solid gray;
+}
+
+
+
+#controls{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width:160px;
+	height:600px;
+	padding:20px;
+	border:1px solid gray;
+	background-color:lightskyblue;
+	border-radius:10px;
+	box-shadow:2px 2px 6px lightskyblue;
+}
+
+.innerBorder{
+	border: 2px solid white;
+	margin-top:20px;
+	margin-bottom:20px;
+	width:175px;
+}
+
+p{
+	margin:0px;
+}
+
+#save{
+	float:center;
+	height:20px;
+	padding:8px;
+	width:50px;
+	background-color:#434343;
+}
